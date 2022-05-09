@@ -12,19 +12,19 @@ class Department extends polymorphismHospital{
     }
 }
 //child subclass Consulting
-class Consulting extends Department{
+class Consulting extends polymorphismHospital{
     void hospital(){
         System.out.println("(1)consulting Department");
     }
 }
 //child subclass Imaging
-class Imaging extends Consulting{
+class Imaging extends polymorphismHospital{
     void hospital(){
         System.out.println("(2)Imaging department");
     }
 }
 //child subclass Patholody
-class Pathology extends Imaging{
+class Pathology extends polymorphismHospital{
     void hospital(){
         System.out.println("(3)Pathology department");
     }
